@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pc builder applcication</title>
+
+  <!-- -------Font awesome---------- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- -------Bootstrap CSS stylesheet ---------- -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+  <!-- --------- CSS---------------------  -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+
+<body class="w-75 mx-auto">
+  <header>
+      <h2 id="color" class="text-center margin-top">Let's save our money</h2>
+  </header>
+  <!-- ---------------------------------Main code starts here------------------------------  -->
+  <main>
+    <section class="container mt-5 mb-5">
+      <div class="row gap-4">
+        <!-------------------------- Image add section  ------------------------------------>
+        <div class="col">
+          <img src="images/image.jpg" class="img-fluid" alt="" />
+          <!-- --------------Specifications---------- --> 
+        </div>
+        <!-- ----------Customization Section -------------- -->
+        <div class="col mx-3">
+          <!------------------- heading------------ -->
+
+          <h2 class="fw-bold text-center">Income</h2>
+
+          <!----------------------- Customization Options-------------------- -->
+
+          <!-------------------- Customization buttons--------------- -->
+          <div class="margin-top d-flex align-items-center mx-auto">
+            <p class="bold me-5" >Income</p>
+            <input type="text" class="form-control" id="netIncome" placeholder="0">
+            </p>
+          </div>
+          <h2 class="fw-bold text-center margin-top">Expenses</h2>
+           <div class="margin-top d-flex align-items-center">
+            <p class="bold me-5">Food:</p>
+            <input type="text" class="form-control" id="foodAmount" placeholder="0">
+            </p>
+            </div>
+           <div class="margin-top d-flex align-items-center">
+            <p class="bold me-5">Rent:</p>
+            <input type="text" class="form-control" id="rentAmount" placeholder="0">
+            </p>
+            </div>
+            <div class="margin-top d-flex align-items-center">
+            <p class="bold me-5">Cloths:</p>
+
+            <input type="text" class="form-control" id="clothsAmount" placeholder="0">
+            </p>
+          </div>
+          <div class="text-center">
+            <button type="button" class="btn btn-primary margin-top" id="calculation">Calculate</button>
+          </div>
+          <div class="text-center margin-top">
+            <h5>Total Expenses:</h5>
+            <h5>Balance:</h5>
+          </div>
+          <!-- tax option -->
+          <div class="text-center margin-top d-flex justify-content-between ">
+            <p class="bold me-5">Food:</p>
+           <input id="inputTex" type="text" value=""> %
+            <button type="button" id="totalSave" class="btn btn-secondary btn-sm">Save</button>
+          </div>
+          <div class="text-center margin-top">
+            <h5 id="savaingAmount">Saving Amount:</h5>
+            <h5 id="remainBalance">Remainning Balance:</h5>
+          </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
