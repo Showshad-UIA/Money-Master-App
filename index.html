@@ -44,7 +44,7 @@
           <!-------------------- Customization buttons--------------- -->
           <div class="margin-top d-flex align-items-center mx-auto">
             <p class="bold me-5" >Income</p>
-            <input type="text" class="form-control" id="netIncome" placeholder="0">
+            <input type="number" class="form-control" id="income" placeholder="0" value="">
             </p>
           </div>
           <h2 class="fw-bold text-center margin-top">Expenses</h2>
@@ -75,8 +75,8 @@
           <!-- tax option -->
           <div class="text-center margin-top d-flex justify-content-between ">
             <p class="bold me-5">Save:</p>
-           <input id="inputTex" type="text" value="20"> %
-            <button type="button" id="totalSave" class="btn btn-primary btn-sm">Save</button>
+           <input id="savings" type="text" value="20"> %
+            <button type="button" id="totalSave" class="btn btn-primary btn-sm" onclick="handleOnClick(event)">Save</button>
           </div>
           <div class="text-center margin-top">
             <h5 >Saving Amount:<span id="savaingAmount"></span></h5>
