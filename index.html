@@ -68,18 +68,19 @@
             <button type="button" class="btn btn-primary margin-top" id="calculation">Calculate</button>
           </div>
           <div class="text-center margin-top">
-            <h5>Total Expenses:</h5>
-            <h5>Balance:</h5>
+            <h5 >Total Expenses:<span id="netExpenses"></span></h5>
+            <h5 >Balance:<span id="netBalance"></span></h5>
+            
           </div>
           <!-- tax option -->
           <div class="text-center margin-top d-flex justify-content-between ">
-            <p class="bold me-5">Food:</p>
-           <input id="inputTex" type="text" value=""> %
-            <button type="button" id="totalSave" class="btn btn-secondary btn-sm">Save</button>
+            <p class="bold me-5">Save:</p>
+           <input id="inputTex" type="text" value="20"> %
+            <button type="button" id="totalSave" class="btn btn-primary btn-sm">Save</button>
           </div>
           <div class="text-center margin-top">
-            <h5 id="savaingAmount">Saving Amount:</h5>
-            <h5 id="remainBalance">Remainning Balance:</h5>
+            <h5 >Saving Amount:<span id="savaingAmount"></span></h5>
+            <h5 >Remainning Balance: <span id="remainBalance"></span></h5>
           </div>
     </main>
     <script src="js/script.js"></script>
