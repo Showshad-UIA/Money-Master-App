@@ -1,13 +1,16 @@
-/* -------------------------google font ------------------------- */
+/* -------------------------font -------------------------
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-/* --------------------------Common Utilities ---------------------------*/
+/* --------------------------body part ---------------------------*/
 body {
   font-family: "Poppins", sans-serif;
 }
 
-/* ---------------------Customization section -------------------------- */
-
+/* ---------------------overall css style -------------------------- */
+.img {
+  height: 700px;
+  width: 700px;
+}
 .margin-top {
   margin-top: 40px;
 }
@@ -32,4 +35,32 @@ body {
   background-color: cornflowerblue;
   color: white;
 }
-/* --------------------End---------------------- */
+*/
+
+
+
+/* style for all label */
+label {
+  width: 60px;
+}
+.img {
+  width: 700px;
+  height: 700px;
+}
+/* style for form  */
+
+/* all button text color  */
+.button {
+  color: white;
+}
+/* disable error message  */
+#error-message {
+  color: red;
+  font-size: large;
+  display: none;
+}
+#error-message2 {
+  color: red;
+  font-size: large;
+  display: none;
+}
